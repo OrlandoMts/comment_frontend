@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <h2 class="text-primary">Error 5:20 Sistema Restaurado</h2>
+
+  <div class="alert alert-info" role="alert">
+    <strong>Toma un momento para reflexionar</strong> y escribe de forma anónima
+    tu respuesta. Puedes escribir cualquiera de estas opciones y cuantas veces
+    sean necesarias:
+    <ul class="mt-2 mb-0">
+      <li>
+        Algo que tú consideras es pecado (acciones, palabras, pensamientos,
+        etc.).
+      </li>
+      <li>Algo que no estás seguro si es pecado o no, pero te genera duda.</li>
+      <li>
+        Algo que haces o te gustaría hacer, pero piensas que tal vez es pecado.
+      </li>
+    </ul>
+    <p class="mt-2 mb-0">
+      No hay respuestas correctas o incorrectas. La idea es ser sinceros para
+      poder aprender y hablar de esto juntos.
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <form [formGroup]="formData" autocomplete="off" (ngSubmit)="submit()">
+      <textarea
+        class="form-control"
+        formControlName="text"
+        rows="5"
+        placeholder="Escribe tu comentario aquí..."
+      ></textarea>
+
+      <div class="d-flex justify-content-end mt-2">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>

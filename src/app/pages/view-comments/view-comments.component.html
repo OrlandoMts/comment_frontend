@@ -1,0 +1,13 @@
+<div class="container mt-4">
+  <h2>Comentarios</h2>
+  <ul class="list-group">
+    @for (comment of comments; track $index) {
+    <li class="list-group-item">
+      <p>{{ comment.text }}</p>
+      <small class="text-muted">{{ comment.date | date : "short" }}</small>
+    </li>
+    } @empty {
+    <p>Nadie ha enviado comentarios 😞</p>
+    }
+  </ul>
+</div>

@@ -40,7 +40,7 @@ testem.log
 Thumbs.db
 
 # Env
-src/environments
+# src/environments
 
 # Testing
 src/testing/*.spec.ts
